@@ -21,5 +21,10 @@ int main()
     cout << CPoint::listCount() <<endl;
 
     CRectangle* rectangle = new CRectangle(CPoint(1,2),CPoint(1,2));
-    cout << CPoint::listCount() << CRectangle::listCount() << endl;
+    cout << CPoint::listCount() << " "<< CRectangle::listCount() << endl;
+    delete rectangle;
+    CCircle c(10,2,5);
+    CCircle d = c;
+    cout << CPoint::listCount() << " "<< CRectangle::listCount() << endl;
+
 }

@@ -26,6 +26,12 @@ string CCircle::list()
 {
     return "center:"+Center.list()+ " Size: "+to_string(Size);
 }
+CCircle::CCircle (const CCircle& cObj):
+    Center(cObj.Center),
+    Size(cObj.Size)
+{
+    oCount++;
+}
 int CCircle::listCount()
 {
     return oCount;
